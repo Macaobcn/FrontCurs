@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=form, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <a href="/Bàsiques/">Dades bàsiques</a> |
+    <a href="/Contacte/">Dades de contacte</a> |
+    <a href="/Conèixer/">Tecnologíes que voldries conèixer</a> |
+    <a href="/Útils/">Tecnologíes que et seran útils</a>
+    </nav>
+  <h1>Omple aquest formulari amb les teves dades</h1>
+  <p>Afegeix les teves dades i els teus interessos als 4 apartats següents, de dalt a baix</p><br>
+    
+    <h2>1.Dades bàsiques</h2>
+    <section>
+  <form action="label for="fname">Nom:</label><br>
+    <input type="text" id="nom" name="nom"></br> <br>
+    <label for="lname">1er cognom:</label><br>
+    <input type="text" id="pcognom" name="pcognom"></br><br> 
+    <label for="sname">2n cognom:</label><br>
+    <input type="text" id="scognom" name="scognom"><br>
+  </form> </section></br>
+
+  <section>
+<label for="ets">Ets: </label>
+<input type="radio" id="dona" name="sexe" value="dona"> 
+<label for="html">Dona</label>
+<input type="radio" id="home" name="sexe" value="home"> 
+<label for="css">Home</label>
+<input type="radio" id="otros" name="sexe" value="otros"> 
+<label for="html">Otros</label><br><br>
+
+<label for="Neixement">Data de neixement:</label><br>
+<input type="date" id="neixement" name="neixement" value="dd/mm/yy"<br><br><br><br>
+
+<section>
+    <h2>2.Dades de contacte</h2>
+
+    <label for="Email">Email: </label><input type="text" name="Email"><br><br>
+    <label for="Telefon">Telèfon: </label><input type="text" name="Telèfon"><br><br>
+    <label for="ets">Vius a Barcelona:</label>
+    <input type="radio" id="si" name="si">
+    <label for="html">Si</label>
+    <input type="radio" id="no" name="no">
+    <label for="css">No</label<br><br><br>
+
+    <label for="tipus">Tipus de via:</label>
+    <input list="tipusvia" name="tipusvia">
+    <datalist id="tipusvia">
+    <option value="Carrer">
+    <option value="Via">
+    <option value="Avinguda">
+    <option value="Plaça">
+        </datalist>
+        <input type= “text” size="30" maxlength="50" value="Nom via" name="Nom"><br><br>
+    <label for="Codi Postal">Codi Postal: </label><input type="text" name="Codi Postal">
+    <label for="Ciutat"<>Ciutat: </label><input type="text" name="Ciutat"></section><br><br>
+    <br><br>
+   
+    </datalist>
+
+     <h2>3.Tecnologíes que voldries conèixer</h2>
+
+     <section><p>Escull el llenguatge web que t'interessa més:</p>
+
+     <form>
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="html">HTML</label><br>
+     <input type="radio" id="css" name="fav_language" value="CSS">
+     <label for="css">CSS</label><br>
+     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+     <label for="javascript">JavaScript</label></section>
+      <br><br><br><br>
+
+      <h2>4.Tecnologíes que et seràn útils</h2>
+<section>
+     <p>Escull el lenguatge web que pots utilitzar a la teva feina:</p>
+
+     <form>
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="html">HTML</label><br>
+     <input type="radio" id="css" name="fav_language" value="CSS">
+     <label for="css">CSS</label><br>
+     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+     <label for="javascript">JavaScript</label>
+    </section><br><br><br>
+      <form action="/action_page.php">
+        
+        <input type="submit" value="Submit">
+      </form>
+</form>  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

@@ -7,17 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Dades bàsiques</h1>
-  <form action="label" for="fname">Nom:</label><br>
+
+  <nav>
+    <a href="/Bàsiques/">Dades bàsiques</a> |
+    <a href="/Contacte/">Dades de contacte</a> |
+    <a href="/Conèixer/">Tecnologíes que voldries conèixer</a> |
+    <a href="/Útils/">Tecnologíes que et seran útils</a>
+    </nav>
+  <h1>Omple aquest formulari amb les teves dades</h1>
+  <p>Afegeix dades personals i interessos professionals als 4 apartats següents, de dalt a baix</p><br>
+    
+    <h2>Dades bàsiques</h2>
+    <section>
+  <form action="label for="fname">Nom:</label><br>
     <input type="text" id="nom" name="nom"></br> <br>
     <label for="lname">1er cognom:</label><br>
-    <input type="text" id="pcognom" name="pcognom"></br> <br>
+    <input type="text" id="pcognom" name="pcognom"></br><br> 
     <label for="sname">2n cognom:</label><br>
     <input type="text" id="scognom" name="scognom"><br>
-  </select></form> </br>
+  </form> </section></br>
 
-  
-<label for="ets">Ets </label>
+  <section>
+<label for="ets">Ets: </label>
 <input type="radio" id="dona" name="sexe" value="dona"> 
 <label for="html">Dona</label>
 <input type="radio" id="home" name="sexe" value="home"> 
@@ -26,14 +37,14 @@
 <label for="html">Otros</label><br><br>
 
 <label for="Neixement">Data de neixement:</label><br>
-<input type="date" id="neixement" name="neixement" value="dd/mm/yy"<br><br><br><br><br>
+<input type="date" id="neixement" name="neixement" value="dd/mm/yy"<br><br><br><br>
 
-  
-    <h1>Dades contacte</h1>
+<section>
+    <h2>Dades de contacte</h2>
 
-    <label for="Email">Email </label><input type="text" name="Email"><br><br>
-    <label for="Telefon">Telèfon </label><input type="text" name="Telèfon"><br><br>
-    <label for="ets">Vius a Barcelona</label>
+    <label for="Email">Email: </label><input type="text" name="Email"><br><br>
+    <label for="Telefon">Telèfon: </label><input type="text" name="Telèfon"><br><br>
+    <label for="ets">Vius a Barcelona:</label>
     <input type="radio" id="si" name="si">
     <label for="html">Si</label>
     <input type="radio" id="no" name="no">
@@ -47,16 +58,16 @@
     <option value="Avinguda">
     <option value="Plaça">
         </datalist>
-        <input type= “text” size="30" maxlength="50" value="Nom via" name="Nom">
-    <label for="Codi Postal">Codi Postal </label><input type="text" name="Codi Postal">
-    <label for="Ciutat">Ciutat </label><input type="text" name="Ciutat"><br><br>
+        <input type= “text” size="30" maxlength="50" value="Nom via" name="Nom"><br><br>
+    <label for="Codi Postal">Codi Postal: </label><input type="text" name="Codi Postal">
+    <label for="Ciutat"<>Ciutat: </label><input type="text" name="Ciutat"></section><br><br>
     <br><br>
    
     </datalist>
 
-     <h1>Tecnologíes que voldries conèixer</h1>
+     <h2>Tecnologíes que voldries conèixer</h2>
 
-     <p>Escull el llenguatge web que t'interessa més:</p>
+     <section><p>Escull el llenguatge web que t'interessa més:</p>
 
      <form>
      <input type="radio" id="html" name="fav_language" value="HTML">
@@ -64,11 +75,11 @@
      <input type="radio" id="css" name="fav_language" value="CSS">
      <label for="css">CSS</label><br>
      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-     <label for="javascript">JavaScript</label>>
+     <label for="javascript">JavaScript</label></section>
       <br><br><br><br>
 
-      <h1>Tecnologíes que et seran útils</h1>
-
+      <h2>Tecnologíes que et seran útils</h2>
+<section>
      <p>Escull el lenguatge web que pots utilitzar a la teva feina:</p>
 
      <form>
@@ -77,8 +88,8 @@
      <input type="radio" id="css" name="fav_language" value="CSS">
      <label for="css">CSS</label><br>
      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-     <label for="javascript">JavaScript</label>>
-      <br><br><br>
+     <label for="javascript">JavaScript</label>
+    </section><br><br><br>
       <form action="/action_page.php">
         
         <input type="submit" value="Submit">
