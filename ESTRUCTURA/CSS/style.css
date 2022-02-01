@@ -1,0 +1,9 @@
+.contenedor {
+    column-width: 250px;
+} 
+.principal {
+    column-width: 200px;
+} 
+.sidebar {
+    column-width: 350px;
+} 

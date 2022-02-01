@@ -1,0 +1,18 @@
+body {
+    background-color: #AAA;
+    margin:0px, 50px 50px 
+}
+
+.container {
+    display:"flex";
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #f5ca3c;
+    padding: 30px;
+    margin: 30px;
+}
+
+.item {
+    background-color:#1c57b5 ;
+
+}
