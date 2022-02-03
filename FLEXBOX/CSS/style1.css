@@ -8,7 +8,8 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #f5ca3c;
-    padding: 30px;
+    color: #white;
+    padding: 15px;
     margin: 30px;
 }
 
