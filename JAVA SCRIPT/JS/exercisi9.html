@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+
+    let frase = prompt('Ingrese una oración:');
+    document.write(frase + '<br><br>');
+    let palabra = prompt('Ingrese una palabra:');
+    document.write(palabra + '<br><br>');
+
+    var dondeEstaPalabra = frase.indexOf(palabra);
+    document.write("donde esta" + dondeEstaPalabra);
+
+    if(dondeEstaPalabra == -1){
+        document.write(" No encontrado");
+    }
+    else {
+        document.write(" Encontrado");
+    }
+
+    
+    </script>
+
+    
+</body>
+</html>
