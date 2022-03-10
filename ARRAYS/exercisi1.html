@@ -9,20 +9,21 @@
 <body>
     <script>
         //Creem espai en memoria per un array de 10 elements. De moment sense contingut
-var array8 = new Array(10);
+/* var array8 = new Array(10);
 //Creem un array amb 6 elements
 const meses = new Array('Enero', 'Febrero', 'Marzo', 'Abril',
-'Mayo', 'Junio');
+'Mayo', 'Junio'); */
 // Puede contener un poco de todo:
-var array8 = new Array('Marzo');
-const carrito = [array8];
+//* var array8 = new Array('Marzo'); const carrito = [array8]; */
 const verdura = "coliflor"
 const deTodo = ["Hola", 10, true, "si", null, { nombre: 'Juan',
 trabajo: 'Programador'}, [1,2,3,4]];
-console.log(deTodo[0]);
+const carrito =[deTodo]
 carrito.push(deTodo[2]);
 carrito.push(verdura);
 console.log(carrito);
+console.log(deTodo[0]);
+
     </script>
 </body>
 </html>
