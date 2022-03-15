@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+
+    <body>
+     
+    <script>
+var canvas4 = document.getElementById("canvas-4");
+var cnv4 = null;
+if (canvas4.getContext) {
+    cnv4 = canvas4.getContext("2d");
+    trazarCnv4();
+}
+
+    cnv4.strokeStyle = "#FACB84";
+    cnv4.shadowOffsetX = 0;
+    cnv4.shadowOffsetY = 0;  
+    cnv4.lineWidth = 2;
+    var texto = document.getElementById("texto4").value;            
+    //Letra hueca
+    cnv4.font = "64px Arial";
+    cnv4.strokeText(texto,10,60);
+    //Letra maciza con sombra en un recuadro
+    var x = 10;
+    var y = 90;
+    var alto = 50;
+    var relleno = 10;
+    cnv4.font = "italic bold " + alto +"px Times New Roman, sans-serif";
+    var metrica = cnv4.measureText(texto);
+    var anchoCaja = metrica.width+2*relleno;
+    var altoCaja = alto+2*relleno;
+    cnv4.strokeStyle = "blue";
+    cnv4.lineWidth = 5;
+    cnv4.lineJoin = "round";           
+    cnv4.strokeRect(x,y,anchoCaja,altoCaja);
+    cnv4.fillStyle = "red";
+    cnv4.shadowColor = "rgba(0,255,190,0.5)";
+    cnv4.shadowOffsetX = 2;
+    cnv4.shadowOffsetY = 2;
+    cnv4.fillText(texto, x+relleno, y+alto);
+</script>
+
+<body>
+</html>
