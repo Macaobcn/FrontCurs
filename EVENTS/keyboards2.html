@@ -1,0 +1,11 @@
+<p>Press inside this IFrame first to focus it, then try pressing keys on
+    the keyboard.</p>
+    <p id="log"></p>
+    <script>
+    const log = document.getElementById('log');
+        document.addEventListener('keypress', logKey);
+    function logKey(e) {
+    log.textContent += ` ${e.code}`;
+    }
+    </script>
+    </body>
