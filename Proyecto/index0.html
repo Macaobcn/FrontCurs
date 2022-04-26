@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-     //1.DRAG & DROP //  function allowDrop(ev) {
-       //   ev.preventDefault();
-        }
-        
-       // function drag(ev) {
-      //    ev.dataTransfer.setData("text", ev.target.id);
-        }
-        
-      //  function drop(ev) {
-       //   ev.preventDefault();
-       //  var data = ev.dataTransfer.getData("text");
-       //  ev.target.appendChild(document.getElementById(data));
-        //}
+    function allowDrop(ev) {
+  ev.preventDefault();
+}
 
-      //2.  
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+} 
         </script>
     <style> 
     body {
@@ -37,20 +35,27 @@ p {
   font-size: 25px;
 }
 
-    </style>
+
+
+     </style>
 </head>
 
 <body>
-    <h1 style="font-family:verdana">ENVÍE AQUÍ EL DISEÑO DE SU VEHÍCULO</h1>
+  <center><h1 style="font-family:verdana">ENVÍE AQUÍ EL DISEÑO DE SU VEHÍCULO</h1></center>
 
+<br>
+<br>
+<br>
 
-<p style="font-family:verdana"> Arrastre o inserte aquí debajo su diseño, en <br>
-Adobe Illustrator / PhotoShop / CadCam / <br> Autodesk 3DS / Autodesk Alias o Blender.</p>
+<center><p style="font-family:verdana"> Arrastre o inserte aquí debajo su diseño, en <br>
+Adobe Illustrator / PhotoShop / CadCam / <br> Autodesk 3DS / Autodesk Alias o Blender.</p></center>
+<br>
+<br>
+<br>
 
+ <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-// <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-//<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
-  
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<center><img src="img/img_logo.gif" alt=""> </center>
 </body>
 </html>
